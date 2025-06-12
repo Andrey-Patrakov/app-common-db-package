@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "database"
+version = "0.0.1"
+description = "Database package for my web apps"
+authors = ["Patrakov Andrey Vladimirovich <a.v.patrakov95@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "2.0.38"
+pydantic = "2.0.3"
+pydantic-settings = "2.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
