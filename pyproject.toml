@@ -5,6 +5,7 @@ description = "Database package for my web apps"
 authors = ["Patrakov Andrey Vladimirovich <a.v.patrakov95@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+include = ["database"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
