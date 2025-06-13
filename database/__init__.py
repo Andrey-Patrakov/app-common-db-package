@@ -1,5 +1,5 @@
 from .config import db_settings
-from .utils import async_session_maker
+from .utils import async_session_maker, UnitOfWork
 from .models import BaseDBModel
 from .repositories import AbstractRepository, SQLAlchemyRepository
 from .services import SQLAlchemyService
@@ -12,4 +12,5 @@ __all__ = [
     AbstractRepository,
     SQLAlchemyRepository,
     SQLAlchemyService,
+    UnitOfWork
 ]
