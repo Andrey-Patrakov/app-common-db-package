@@ -21,7 +21,7 @@ async def create_database_if_not_exists(url):
 
     finally:
         if engine:
-            engine.dispose()
+            await engine.dispose()
 
     if not db_exists:
         url = url._replace(database='postgres')
@@ -30,4 +30,4 @@ async def create_database_if_not_exists(url):
         async with engine.connect() as connection:
             await connection.execute(query)
 
-        engine.dispose()
+        await engine.dispose()

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "database"
-version = "0.0.1"
+version = "0.0.2"
 description = "Database package for my web apps"
 authors = ["Patrakov Andrey Vladimirovich <a.v.patrakov95@gmail.com>"]
 license = "MIT"
