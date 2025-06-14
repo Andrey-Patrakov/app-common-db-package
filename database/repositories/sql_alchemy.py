@@ -16,7 +16,7 @@ class SQLAlchemyRepository(AbstractRepository):
             .values(**values)
             .returning(self.model))
         result = await self.session.execute(query)
-        return result
+        return result.scalar_one_or_none()
 
     async def read(self, **filter_by):
         query = select(self.model).filter_by(**filter_by)
